@@ -53,3 +53,51 @@
   display:block;
   margin:auto;
 }
+
+.home-container{
+  width: 80%;
+  max-width: 90rem;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+.main-top40{
+  box-sizing: border-box;
+}
+
+.main-top40 img{
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.top40-brands-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top40-brand{
+  display: flex;
+  max-width: 25%;
+  justify-content: center;
+  align-content: center;
+  opacity: .8;
+}
+
+.top40-brand:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.top40-brands-container img{
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  border: 0;
+}
