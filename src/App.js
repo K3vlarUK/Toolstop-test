@@ -11,7 +11,12 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-      <header>Toolstop</header>
+      <div className="header-bar">
+        <a href="/"><span className="company">Toolstop</span></a>
+        <input type="text" className="search-box" placeholder="Search product or brand..." />
+        <button type="button" className="sign-in">Sign In</button>
+      </div>
+      <br/>
         <Navigation />
         <Switch>
           <Route exact path="/" component={ HomePage } />

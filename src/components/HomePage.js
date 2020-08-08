@@ -19,7 +19,7 @@ class HomePage extends Component {
     render() { 
         return ( 
             <div className="home-container">
-                <h1>Top 40</h1>
+                <h2>Top 40</h2>
                 <div className="main-top40">
                     <a href="/top40">
                         <img src="https://cdn11.bigcommerce.com/s-7holhynnib/product_images/uploaded_images/top-40-banner.png" alt="" />

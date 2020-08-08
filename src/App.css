@@ -37,6 +37,67 @@
   }
 }
 
+.header-bar{
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.header-bar a{
+  text-decoration: none;
+}
+
+.company{
+  font-weight: 900;
+  color: red;
+  font-size: xx-large;
+}
+
+.search-box {
+  width: 30%;
+  border: 2px solid midnightblue;
+  margin-top: 15px;
+  padding: 5px;
+  height: 30px;
+  border-radius: 1px;
+  background-color: white;
+}
+
+::placeholder {
+  color: darkblue;
+}
+
+.sign-in{
+  margin-top: 15px;
+  background-color: white;
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.nav-bar{
+  width: 70%;
+  margin: auto;
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-button{
+  text-decoration: none;
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  padding: 13px 25px;
+  font-weight: bold;
+}
+
+.nav-button:hover{
+  background-color: white;
+  color: red;
+}
+
 .top40-products {
   display: flex;
   flex-direction: row;
@@ -103,13 +164,10 @@
 
 @media (max-width: 797px){
   .top40-brand{
-    flex: 33%;
-  }
-}
-
-@media (max-width: 575px){
-  .top40-brand{
     flex: 50%;
+  }
+  .nav-bar{
+    flex-wrap: wrap;
   }
 }
 
