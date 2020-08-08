@@ -15,7 +15,7 @@ function App() {
         <Navigation />
         <Switch>
           <Route exact path="/" component={ HomePage } />
-          <Route path="/top40" component={ Top40 } />
+          <Route path="/top40/:brand" component={ Top40 } />
           <Route path="/categories" component= { Categories } />
         </Switch>
       </div>

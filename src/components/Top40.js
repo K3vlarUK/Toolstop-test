@@ -11,7 +11,11 @@ class Top40 extends React.Component {
     }
 
     componentDidMount() {
-        fetch("https://product-fetch-toolstop.herokuapp.com/top40")
+        let url = "https://product-fetch-toolstop.herokuapp.com/top40"; // Isnt returning
+        if (this.props.match.params.brand) {
+            url = "https://product-fetch-toolstop.herokuapp.com/top40/" + this.props.match.params.brand;
+        }
+        fetch(url)
         .then(res => res.json())
         .then(
             (result) => {
