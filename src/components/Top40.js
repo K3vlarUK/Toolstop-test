@@ -35,17 +35,25 @@ class Top40 extends React.Component {
         }
         
         return ( 
-            <div className="top40-products">
-                {this.state.items.map((item, index) => {
-                    return (
-                        <div className="product">
-                            <img src={item.images[0].url_thumbnail} alt="" key={index}/>
-                            <p>{item.name}</p>
-                            <p>£{(item.price * 1.2).toFixed(2)}</p>
-                            <p>£{item.price.toFixed(2)} ex. VAT</p>
-                        </div>
-                    )
-                })}
+            <div>
+            <br/>
+                <div className="top40-banner">
+                    <img className="top40-banner" src="https://cdn11.bigcommerce.com/s-7holhynnib/product_images/uploaded_images/top-40-banner.png" alt="" />
+                </div>
+                    <div className="top40-products">
+                        {this.state.items.map((item, index) => {
+                            return (
+                                <div className="product"  key={index}>
+                                    <a href={'https://www.toolstop.co.uk' + item.custom_url.url}>
+                                        <img src={item.images[0].url_thumbnail} alt=""/>
+                                        <p>{item.name}</p>
+                                        <p>£{(item.price * 1.2).toFixed(2)}</p>
+                                        <p>£{item.price.toFixed(2)} ex. VAT</p>
+                                    </a>
+                                </div>
+                            )
+                        })}
+                    </div>
             </div>
         );
     }

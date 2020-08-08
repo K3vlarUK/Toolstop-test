@@ -46,3 +46,10 @@
 .product{
   flex: 20%;
 }
+
+.top40-banner{
+  max-width:50%;
+  object-fit: scale-down;
+  display:block;
+  margin:auto;
+}
