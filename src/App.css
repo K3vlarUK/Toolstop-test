@@ -48,7 +48,7 @@
 }
 
 .top40-banner{
-  max-width:50%;
+  max-width:80%;
   object-fit: scale-down;
   display:block;
   margin:auto;
@@ -68,14 +68,13 @@
 }
 
 .main-top40 img{
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  display: inline-block;
 }
 
 .top40-brands-container{
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -100,4 +99,22 @@
   height: auto;
   display: inline-block;
   border: 0;
+}
+
+@media (max-width: 797px){
+  .top40-brand{
+    flex: 33%;
+  }
+}
+
+@media (max-width: 575px){
+  .top40-brand{
+    flex: 50%;
+  }
+}
+
+@media (max-width: 350px){
+  .top40-brand{
+    flex: 100%;
+  }
 }

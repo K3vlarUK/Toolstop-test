@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navigation';
 
 import HomePage from './components/HomePage';
-import Top40 from './components/Top40';
-import Categories from './components/Categories';
+import Top40 from './containers/Top40';
+import Top20 from './containers/Top20';
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
         <Navigation />
         <Switch>
           <Route exact path="/" component={ HomePage } />
-          <Route path="/top40/:brand" component={ Top40 } />
-          <Route path="/categories" component= { Categories } />
+          <Route exact path="/top40" component={ Top40 } />
+          <Route path="/top40/:brand" component={ Top20 } />
         </Switch>
       </div>
     </BrowserRouter>

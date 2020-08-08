@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Top40 extends React.Component {
+class Top20 extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
@@ -11,10 +11,7 @@ class Top40 extends React.Component {
     }
 
     componentDidMount() {
-        let url = "https://product-fetch-toolstop.herokuapp.com/top40"; // Isnt returning
-        if (this.props.match.params.brand) {
-            url = "https://product-fetch-toolstop.herokuapp.com/top40/" + this.props.match.params.brand;
-        }
+        let url = "https://product-fetch-toolstop.herokuapp.com/top40/" + this.props.match.params.brand;
         fetch(url)
         .then(res => res.json())
         .then(
@@ -41,9 +38,6 @@ class Top40 extends React.Component {
         return ( 
             <div>
             <br/>
-                <div className="top40-banner">
-                    <img className="top40-banner" src="https://cdn11.bigcommerce.com/s-7holhynnib/product_images/uploaded_images/top-40-banner.png" alt="" />
-                </div>
                     <div className="top40-products">
                         {this.state.items.map((item, index) => {
                             return (
@@ -63,4 +57,4 @@ class Top40 extends React.Component {
     }
 }
  
-export default Top40;
+export default Top20;
