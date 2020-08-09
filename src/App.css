@@ -1,3 +1,12 @@
+body {
+  font-family: Arial,Helvetica,sans-serif;
+  background-color: #f1f2f7;
+}
+
+a {
+  background-color: transparent;
+}
+
 .App {
   text-align: center;
 }
@@ -37,6 +46,49 @@
   }
 }
 
+.top-bar{
+  background-color: white;
+  padding: 10px;
+}
+
+.contact{
+  width: 100%;
+  background-color: #f1f2f7;
+  padding: 5px;
+  padding-right: 15px;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.number{
+  padding-left: 20px;
+}
+
+.fake-buttons{
+  float: right;
+  margin-top: -20px;
+}
+
+.fake-buttons a{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.klarna{
+  width: 100%;
+  background-color: #ffb3c7;
+  padding: 5px;
+  padding-right: 15px;
+  margin-left: -10px;
+  text-align: center;
+}
+
+.klarna-text{
+  padding:0;
+  margin: 0;
+  font-size: 18px;
+}
+
 .header-bar{
   width: 80%;
   display: flex;
@@ -48,16 +100,23 @@
   text-decoration: none;
 }
 
-.company{
-  font-weight: 900;
-  color: red;
-  font-size: xx-large;
+.header-bar img {
+  padding-top: 1rem;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 91.71429rem;
+  position: relative;
+  width: 100%;
 }
 
 .search-box {
   width: 30%;
   border: 2px solid midnightblue;
-  margin-top: 15px;
+  margin-top: 1rem;
+  margin-left: -2rem;
   padding: 5px;
   height: 30px;
   border-radius: 1px;
@@ -69,7 +128,8 @@
 }
 
 .sign-in{
-  margin-top: 15px;
+  margin-top: 1rem;
+  margin-left: 1rem;
   background-color: white;
   border: none;
   font-weight: bolder;
@@ -79,7 +139,7 @@
 .nav-bar{
   width: 70%;
   margin: auto;
-  background-color: blue;
+  background-color: #1f397f;
   display: flex;
   justify-content: space-around;
 }
@@ -87,25 +147,15 @@
 .nav-button{
   text-decoration: none;
   display: inline-block;
-  background-color: blue;
+  background-color: #1f397f;
   color: white;
   padding: 13px 25px;
   font-weight: bold;
 }
 
 .nav-button:hover{
-  background-color: white;
+  background-color: #ccc;
   color: red;
-}
-
-.top40-products {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.product{
-  flex: 20%;
 }
 
 .top40-banner{
@@ -116,12 +166,13 @@
 }
 
 .home-container{
-  width: 80%;
-  max-width: 90rem;
+  width: 70%;
+  max-width: 91rem;
   margin: auto;
-  padding: 0;
+  padding: 0 1.5rem;
   text-align: center;
   position: relative;
+  box-sizing: border-box;
 }
 
 .main-top40{
@@ -162,12 +213,68 @@
   border: 0;
 }
 
+.top40-products{
+  width: 80%;
+  margin: auto;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: white;
+}
+
+.product{
+  flex: 1 0 19%;
+  padding: 5px;
+  text-align: center;
+}
+
+.product a{
+  text-decoration: none;
+}
+
+.product-name{
+  color: #333333;
+  font-size: 15px;
+  margin: 0 0 .28571rem;
+  font-weight: 700;
+}
+
+.product-name:hover{
+  color: lightslategray;
+}
+
+.product-inc-vat{
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f397f;
+  margin-bottom: 0;
+}
+
+.product-no-vat{
+  color: #333333;
+  font-size: 14px;
+  margin: 0 0 21px;
+}
+
+@media (max-width: 850px){
+  .contact{
+    display: none;
+  }
+}
+
 @media (max-width: 797px){
   .top40-brand{
     flex: 50%;
   }
   .nav-bar{
     flex-wrap: wrap;
+  }
+  .search-box{
+    display: none;
+  }
+  .klarna{
+    display: none;
   }
 }
 

@@ -20,19 +20,21 @@ class HomePage extends Component {
         return ( 
             <div className="home-container">
                 <h2>Top 40</h2>
-                <div className="main-top40">
-                    <a href="/top40">
-                        <img src="https://cdn11.bigcommerce.com/s-7holhynnib/product_images/uploaded_images/top-40-banner.png" alt="" />
-                    </a>
-                </div>
-                <div className="top40-brands-container">
-                    {this.state.top20links.map((link, index) => {
-                        return (
-                            <div className="top40-brand" key={index}>
-                                <a href={"/top40/" + link.company}><img src={link.image} alt="" /></a>
-                            </div>
-                        )
-                    })}
+                <div className="container">
+                    <div className="main-top40">
+                        <a href="/top40">
+                            <img src="https://cdn11.bigcommerce.com/s-7holhynnib/product_images/uploaded_images/top-40-banner.png" alt="" />
+                        </a>
+                    </div>
+                    <div className="top40-brands-container">
+                        {this.state.top20links.map((link, index) => {
+                            return (
+                                <div className="top40-brand" key={index}>
+                                    <a href={"/top40/" + link.company}><img src={link.image} alt="" /></a>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
          );
